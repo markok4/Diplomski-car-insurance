@@ -1,0 +1,14 @@
+@use '../../styles/colors' as *;
+
+.btn {
+    background-color: $gray-light;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $gray;
+        color: $text-light;
+    }
+}

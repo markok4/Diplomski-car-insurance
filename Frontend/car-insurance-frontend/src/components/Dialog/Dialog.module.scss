@@ -1,0 +1,40 @@
+@use "/src/styles/colors" as *;
+
+.container {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  gap: 2rem;
+  font-size: 1.5rem;
+  border: 1px solid $primary-light;
+  text-align: center;
+  min-width: 42rem;
+  min-height: 20rem;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.25);
+  position: fixed;
+  z-index: 20;
+  inset: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.btn {
+  flex-basis: 0;
+  flex-grow: 1;
+}

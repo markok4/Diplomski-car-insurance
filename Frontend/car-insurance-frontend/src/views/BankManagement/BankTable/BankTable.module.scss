@@ -1,0 +1,16 @@
+@use "/src/styles/colors" as *;
+
+.nodata {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.logo{
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid $primary-light;
+  border-radius: 1rem;
+  margin: 0 auto;
+  background-size: cover; 
+  background-position: center;
+}

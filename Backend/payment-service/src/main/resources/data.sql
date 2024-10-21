@@ -1,0 +1,30 @@
+INSERT INTO payment_mode (id, name, is_deleted) VALUES (1, 'Card', false);
+INSERT INTO payment_mode (id, name, is_deleted) VALUES (2, 'Bank', false);
+INSERT INTO payment_mode (id, name, is_deleted) VALUES (3, 'Bankaraaa', false);
+
+INSERT INTO currency (id, name, code, logo, creation_date, last_updated, is_deleted, is_valid) VALUES (1, 'United States Dollar', 'USD', 'currency_1714054910785.png', '2022-01-15 08:30:00', '2022-01-15 08:30:00', false, true);
+INSERT INTO currency (id, name, code, logo, creation_date, last_updated, is_deleted, is_valid) VALUES (2, 'Euro', 'EUR', 'currency_1714054958418.png', '2022-01-16 10:15:00', '2022-01-16 10:15:00', false, true);
+INSERT INTO currency (id, name, code, logo, creation_date, last_updated, is_deleted, is_valid) VALUES (3, 'British Pound Sterling', 'GBP', 'currency_1714054992536.png', '2022-01-17 09:45:00', '2022-01-17 09:45:00', false, true);
+INSERT INTO currency (id, name, code, logo, creation_date, last_updated, is_deleted, is_valid) VALUES (4, 'Japanese Yen', 'JPY', 'currency_1714055020762.png', '2022-01-18 11:20:00', '2022-01-18 11:20:00', false, true);
+INSERT INTO currency (id, name, code, logo, creation_date, last_updated, is_deleted, is_valid) VALUES (5, 'Australian Dollar', 'AUD', 'currency_1714055046866.png', '2022-01-19 13:10:00', '2022-01-19 13:10:00', false, true);
+INSERT INTO currency (id, name, code, logo, creation_date, last_updated, is_deleted, is_valid) VALUES (6, 'Canadian Dollar', 'CAD', 'currency_1714055072131.png', '2022-01-20 15:30:00', '2022-01-20 15:30:00', false, true);
+INSERT INTO currency (id, name, code, logo, creation_date, last_updated, is_deleted, is_valid) VALUES (7, 'Swiss Franc', 'CHF', 'currency_1714055104443.png', '2022-01-21 16:45:00', '2022-01-21 16:45:00', false, true);
+
+INSERT INTO bank (id, bank_name, logo, bank_address, country, city, employee_number, is_bankrupt, is_deleted, created_at) VALUES (1, 'MyBank', 'https://clipground.com/images/logo-bank-png-10.jpg', '123 Bank St.', 'USA', 'New York', 500, false, false, '2024-04-18T13:37:22.3478324');
+INSERT INTO bank (id, bank_name, logo, bank_address, country, city, employee_number, is_bankrupt, is_deleted, created_at) VALUES (2, 'MyBanK2', 'https://static.vecteezy.com/system/resources/previews/000/354/777/original/bank-vector-icon.jpg', '1234 Bank St.', 'SRB', 'Novi Sad', 400, false, false, '2024-04-18T13:37:22.3478324');
+INSERT INTO bank (id, bank_name, logo, bank_address, country, city, employee_number, is_bankrupt, is_deleted, created_at) VALUES (3, 'MyBanK2', 'https://static.vecteezy.com/system/resources/previews/000/354/777/original/bank-vector-icon.jpg', '1234 Bank St.', 'SRB', 'Novi Sad', 400, false, false, '2024-04-18T13:37:22.3478324');
+INSERT INTO bank (id, bank_name, logo, bank_address, country, city, employee_number, is_bankrupt, is_deleted, created_at) VALUES (4, 'MyBanK2', 'https://static.vecteezy.com/system/resources/previews/000/354/777/original/bank-vector-icon.jpg', '1234 Bank St.', 'SRB', 'Novi Sad', 400, false, false, '2024-04-18T13:37:22.3478324');
+INSERT INTO bank (id, bank_name, logo, bank_address, country, city, employee_number, is_bankrupt, is_deleted, created_at) VALUES (5, 'MyBanK2', 'https://static.vecteezy.com/system/resources/previews/000/354/777/original/bank-vector-icon.jpg', '1234 Bank St.', 'SRB', 'Novi Sad', 400, false, false, '2024-04-18T13:37:22.3478324');
+INSERT INTO bank (id, bank_name, logo, bank_address, country, city, employee_number, is_bankrupt, is_deleted, created_at) VALUES (6, 'MyBanK2', 'https://static.vecteezy.com/system/resources/previews/000/354/777/original/bank-vector-icon.jpg', '1234 Bank St.', 'SRB', 'Novi Sad', 400, false, false, '2024-04-18T13:37:22.3478324');
+INSERT INTO bank (id, bank_name, logo, bank_address, country, city, employee_number, is_bankrupt, is_deleted, created_at) VALUES (7, 'MyBanK2', 'https://static.vecteezy.com/system/resources/previews/000/354/777/original/bank-vector-icon.jpg', '1234 Bank St.', 'SRB', 'Novi Sad', 400, false, false, '2024-04-18T13:37:22.3478324');
+INSERT INTO bank (id, bank_name, logo, bank_address, country, city, employee_number, is_bankrupt, is_deleted, created_at) VALUES (8, 'MyBanK2', 'https://static.vecteezy.com/system/resources/previews/000/354/777/original/bank-vector-icon.jpg', '1234 Bank St.', 'SRB', 'Novi Sad', 400, false, false, '2024-04-18T13:37:22.3478324');
+INSERT INTO bank (id, bank_name, logo, bank_address, country, city, employee_number, is_bankrupt, is_deleted, created_at) VALUES (9, 'MyBanK2', 'https://static.vecteezy.com/system/resources/previews/000/354/777/original/bank-vector-icon.jpg', '1234 Bank St.', 'SRB', 'Novi Sad', 400, false, false, '2024-04-18T13:37:22.3478324');
+INSERT INTO bank (id, bank_name, logo, bank_address, country, city, employee_number, is_bankrupt, is_deleted, created_at) VALUES (10, 'MyBanK2', 'https://static.vecteezy.com/system/resources/previews/000/354/777/original/bank-vector-icon.jpg', '1234 Bank St.', 'SRB', 'Novi Sad', 400, false, false, '2024-04-18T13:37:22.3478324');
+INSERT INTO bank (id, bank_name, logo, bank_address, country, city, employee_number, is_bankrupt, is_deleted, created_at) VALUES (11, 'MyBanK2', 'https://static.vecteezy.com/system/resources/previews/000/354/777/original/bank-vector-icon.jpg', '1234 Bank St.', 'SRB', 'Novi Sad', 400, false, false, '2024-04-18T13:37:22.3478324');
+
+
+INSERT INTO card_type (id, card_holder, card_number, card_type, is_deleted) VALUES (1, 'John Doe', 12345678178, 'Credit', false);
+
+INSERT INTO payment (id, is_deleted, currency_mode_id, payment_mode, bank_name, transaction_no, is_blocked, bank_id) VALUES (1, false, 1, 'bank', 'Sample Bank', 123456, false, 1);
+INSERT INTO payment (id, is_deleted, currency_mode_id, payment_mode, card_holder, card_number, expired_date, card_type_id, status) VALUES (2, false, 1, 'card', 'John Doe', 1234567890123456, '2023-12-31', 1, '1');
+INSERT INTO payment (id, is_deleted, currency_mode_id, payment_mode, cheque_no, issuer_name, owner_name, cheque_date) VALUES (3, false, 1, 'cheque', 78901234, 'Sample Issuer', 'Sample Owner', '2022-10-15 12:30:00');

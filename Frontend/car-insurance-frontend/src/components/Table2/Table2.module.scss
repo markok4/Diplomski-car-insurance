@@ -1,0 +1,32 @@
+@use "../../styles/colors" as *;
+
+.wrapper {
+	overflow-x: auto;
+	box-shadow: 1px 1px 5px 1px rgba($gray-dark, 0.2);
+	border-radius: 10px;
+}
+
+.table {
+  width: 100%;
+  padding: 24px;
+  border-collapse: collapse;
+}
+
+.heading {
+  background-color: $primary-light;
+  padding: 16px 8px;
+
+  &:first-child {
+	border-top-left-radius: 10px;
+  }
+
+  &:last-child {
+	border-top-right-radius: 10px;
+  }
+}
+
+.content {
+  padding: 16px 8px;
+  text-align: center;
+  text-wrap: nowrap;
+}

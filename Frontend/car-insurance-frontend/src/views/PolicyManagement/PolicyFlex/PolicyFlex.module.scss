@@ -1,0 +1,14 @@
+@use "../../../styles/colors" as *;
+
+.card-wrapper {
+	display: flex;
+	gap: 16px;
+}
+
+.details {
+	color: $text-dark;
+
+	&:hover {
+		color: $primary-dark;
+	}
+}

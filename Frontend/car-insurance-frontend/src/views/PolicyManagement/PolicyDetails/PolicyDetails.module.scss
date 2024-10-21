@@ -1,0 +1,72 @@
+@use "../../../styles/colors" as *;
+@use "../../../styles/breakpoint" as *;
+
+.info {
+  font-size: 24px;
+  font-weight: 500;
+  color: $primary;
+  display: flex;
+  width: fit-content;
+  margin-inline: auto;
+  margin-block: 50px;
+}
+
+.grid {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+  margin-inline: auto;
+
+  @include mobile {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.card {
+  width: 256px;
+}
+
+.car-details {
+  grid-column: span 3;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  .card-heading {
+    grid-column: span 4;
+  }
+}
+
+.card-heading {
+  font-size: 22px;
+  margin-bottom: 8px;
+
+  @include mobile {
+    font-size: 18px;
+  }
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 16px;
+
+  .overtext {
+    color: $gray;
+    font-size: 14px;
+  }
+
+  .text {
+    margin-left: 8px;
+  }
+}
+
+.invalid {
+  text-transform: uppercase;
+  color: $accent;
+  display: block;
+  margin-top: 16px;
+}

@@ -1,0 +1,21 @@
+@use '../../../styles/colors' as *;
+@use '../../../styles/breakpoint' as *;
+
+.hamburger {
+    display: none;
+    border: none;
+    background-color: transparent;
+    color: $text-light;
+    padding: 20px;
+    margin-left: auto;
+    cursor: pointer;
+    z-index: 1;
+
+    @include mobile {
+        display: block;
+    }
+}
+
+.hide {
+    display: none;
+}

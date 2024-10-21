@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.nodata {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.title {
+  margin-inline: auto;
+  font-size: 4rem;
+  margin-top: 2rem;
+}

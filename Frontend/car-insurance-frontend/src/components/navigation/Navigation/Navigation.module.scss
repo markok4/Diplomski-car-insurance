@@ -1,0 +1,32 @@
+@use "../../../styles/colors" as *;
+@use "../../../styles/breakpoint" as *;
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+
+  @include mobile {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: $primary-dark;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100dvw;
+    height: 100dvh;
+  }
+}
+
+.link a {
+  font-size: 16px;
+  color: $text-light;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $accent;
+  }
+}

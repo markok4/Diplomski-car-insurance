@@ -1,0 +1,37 @@
+.step {
+  font-size: 2rem;
+}
+
+.stepper-buttons {
+  display: flex;
+  margin-top: auto;
+}
+
+.stepper {
+  margin-top: 1rem;
+}
+
+.btn {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-inline: 2rem;
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  margin-top: 2rem;
+
+  .btn {
+  }
+}
+
+.text {
+  font-size: 1.4rem;
+  max-width: 60ch;
+  text-align: center;
+}

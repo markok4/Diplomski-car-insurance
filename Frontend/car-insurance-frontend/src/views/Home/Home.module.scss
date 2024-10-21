@@ -1,0 +1,50 @@
+@use "../../styles/colors" as *;
+
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding-block: 10px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.info {
+  color: $text-dark;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card {
+  width: 240px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.btn {
+  width: 100%;
+  text-align: center;
+  background-color: $primary-light;
+  padding: 16px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: $text-dark;
+  font-weight: 500;
+  margin-inline: auto;
+  margin-top: auto;
+
+  &:hover {
+    background-color: $primary-dark;
+    color: $text-light;
+  }
+}

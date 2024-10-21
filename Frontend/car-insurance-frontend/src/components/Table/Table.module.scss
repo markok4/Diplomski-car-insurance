@@ -1,0 +1,194 @@
+@use "/src/styles/colors" as *;
+
+.table {
+  min-width: 100%;
+  width: min-content;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.header-cell {
+  padding: 0.5rem;
+}
+
+.cell {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.row {
+  border-bottom: 1px solid $primary-light;
+  height: 4rem;
+}
+
+.header-row {
+  background-color: $primary;
+  color: $text-light;
+  font-weight: bold;
+  font-size: 1.6rem;
+  height: 4rem;
+}
+
+.active {
+  background-color: $primary-dark;
+  color: $text-light;
+  border-radius: 50%;
+}
+
+.pagination {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  list-style-type: none;
+  user-select: none;
+}
+
+.pagination-button {
+  background-color: $primary;
+  color: $text-light;
+  font-weight: bold;
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  transition: 0.1s ease background-color;
+
+  &:not(.disabled) {
+    &:hover {
+      cursor: pointer;
+      background-color: $primary-dark;
+    }
+  }
+}
+
+.disabled {
+  background-color: $primary-light;
+
+  &:hover {
+    cursor: not-allowed;
+  }
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  transition:
+    0.1s ease background-color,
+    0.1s ease color;
+
+  &:not(.active) {
+    &:hover {
+      background-color: $primary-light;
+      color: $text-light;
+      cursor: pointer;
+    }
+  }
+}
+
+.dropdown {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.item-count {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.text {
+  font-size: 1.5rem;
+}
+
+.info {
+  font-size: 2.5rem;
+  color: $primary;
+  transition: 0.1s ease color;
+
+  &:hover {
+    color: $primary-dark;
+    cursor: pointer;
+  }
+}
+
+.button-link {
+  text-decoration: none;
+  color: $text-light;
+  font-weight: bold;
+  font-size: 1.4rem;
+  // padding: 1rem;
+}
+
+.create-button {
+  margin-bottom: 1rem;
+  margin-left: auto;
+  color: $text-light;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.actions-cell {
+  & > * {
+    margin-right: 1rem;
+  }
+}
+
+.delete-btn {
+  font-size: 2.5rem;
+  color: $accent;
+  transition: 0.1s ease color;
+
+  &:hover {
+    color: $accent-light;
+    cursor: pointer;
+  }
+}
+
+.deleted {
+  color: red;
+}
+
+select {
+  padding: 0 30px 0 10px;
+
+  border: 1px solid $primary-light;
+  border-radius: 3px;
+  background: #fff;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.nodata {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: $primary-dark;
+  font-weight: bold;
+}
+
+.selectable {
+  transition: 0.1s ease background-color;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $primary-light;
+  }
+}
+
+.selected {
+  background-color: $primary-light;
+  color: $primary-dark;
+  font-weight: bold;
+}

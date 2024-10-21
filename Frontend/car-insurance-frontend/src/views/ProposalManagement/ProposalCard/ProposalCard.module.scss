@@ -1,0 +1,120 @@
+@use "../../../styles/colors" as *;
+@use "../../../styles/breakpoint" as *;
+
+.card {
+  width: 400px;
+  display: grid;
+  row-gap: 16px;
+  column-gap: 12px;
+  grid-template-columns: 2fr 1fr;
+  align-items: end;
+
+  &.invalid {
+    border: 2px solid $accent;
+    box-shadow: 1px 1px 5px 1px rgba($accent, 0.2);
+  }
+
+  @include mobile {
+    width: 270px;
+    font-size: 14px;
+  }
+}
+
+.subtext {
+  font-size: 12px;
+  text-transform: uppercase;
+
+  @include mobile {
+    font-size: 11px;
+  }
+}
+
+.important-text {
+  font-size: 18px;
+  font-weight: 600;
+
+  @include mobile {
+    font-size: 16px;
+  }
+}
+
+.plates {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+
+  @include mobile {
+    grid-column: span 2;
+  }
+}
+
+.validation {
+  justify-self: end;
+  align-self: baseline;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $accent;
+
+  @include mobile {
+    grid-row: 5;
+    align-self: end;
+    justify-self: start;
+  }
+}
+
+.dates {
+  div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  @include mobile {
+    grid-column: span 2;
+    grid-row: 2;
+
+    div {
+      margin-top: 5px;
+    }
+  }
+}
+
+.amount {
+  color: $primary;
+  font-weight: 700;
+  font-size: 24px;
+  justify-self: end;
+
+  @include mobile {
+    font-size: 20px;
+    grid-row: 5;
+  }
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+
+  @include mobile {
+    justify-self: start;
+    grid-row: 4;
+  }
+}
+
+.action {
+  grid-column: span 2;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  border-top: 1px solid $gray-light;
+  padding-top: 16px;
+}
+
+.link {
+  color: $text-dark;
+
+  :hover {
+    color: $primary-dark;
+  }
+}

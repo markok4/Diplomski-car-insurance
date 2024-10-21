@@ -1,0 +1,48 @@
+@use "/src/styles/colors" as *;
+
+.btn {
+  transition: 0.1s ease background-color;
+  color: $text-light;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.primary {
+  background-color: $primary;
+
+  &:hover {
+    background-color: $primary-dark;
+  }
+}
+
+.accent {
+  background-color: $accent;
+
+  &:hover {
+    background-color: $accent-light;
+  }
+}
+
+.disabled {
+  background-color: gray;
+  &:hover {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+}
+
+.gray {
+  background-color: $gray-light;
+  color: $text-dark;
+
+  &:hover {
+    background-color: $gray;
+    color: $text-light;
+  }
+}

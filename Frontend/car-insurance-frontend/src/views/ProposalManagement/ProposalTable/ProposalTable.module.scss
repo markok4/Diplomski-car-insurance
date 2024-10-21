@@ -1,0 +1,22 @@
+@use "../../../styles/colors" as *;
+@use "../../../styles/breakpoint" as *;
+
+.validation {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $accent;
+}
+
+.btns {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.link {
+  color: $text-dark;
+
+  :hover {
+    color: $primary-dark;
+  }
+}

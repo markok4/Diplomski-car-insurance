@@ -1,0 +1,46 @@
+[
+	{
+		"id": 1,
+		"dateSigned": "2022-01-01 12:00:00",
+		"expiringDate": "2023-01-01 12:00:00",
+		"moneyReceivedDate": "2022-01-01 12:00:00",
+		"amount": 1000.0,
+		"proposal": {
+			"id": 1,
+			"isValid": true,
+			"creationDate": "2022-01-01 12:00:00",
+			"proposalStatus": "CONFIRMED",
+			"amount": 500.0,
+			"carPlates": "ABC123",
+			"isDeleted": false,
+			"insurancePlan": {
+				"id": 1,
+				"name": "Standard Plan",
+				"isPremium": true,
+				"isDeleted": false
+			}
+		}
+	},
+	{
+		"id": 2,
+		"dateSigned": "2022-02-01 12:00:00",
+		"expiringDate": "2023-02-01 12:00:00",
+		"moneyReceivedDate": "2022-02-01 12:00:00",
+		"amount": 1500.0,
+		"proposal": {
+			"id": 2,
+			"isValid": false,
+			"creationDate": "2022-02-01 12:00:00",
+			"proposalStatus": "INITIALIZED",
+			"amount": 800.0,
+			"carPlates": "XYZ789",
+			"isDeleted": false,
+			"insurancePlan": {
+				"id": 2,
+				"name": "Premium Plan",
+				"isPremium": true,
+				"isDeleted": false
+			}
+		}
+	}
+]

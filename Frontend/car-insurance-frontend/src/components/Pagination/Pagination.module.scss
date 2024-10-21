@@ -1,0 +1,26 @@
+@use "../../styles/colors" as *;
+
+.pagination {
+  list-style: none;
+  width: fit-content;
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+  padding: 8px;
+  margin-inline: auto;
+}
+
+.active {
+  background-color: $gray-light;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.page-link {
+  text-decoration: none;
+  color: $text-dark;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

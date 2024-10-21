@@ -1,0 +1,35 @@
+@use "styles/colors" as *;
+@use "styles/breakpoint" as *;
+
+$page-padding: 25px;
+
+.main-wrapper {
+  max-width: calc(1180px - 2 * $page-padding);
+  padding: 50px $page-padding;
+  margin-inline: auto;
+
+  @include mobile {
+    padding: 30px 20px;
+  }
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.toast {
+  font-size: 1.5rem;
+}
+
+.MuiStepIcon-text,
+text {
+  font-size: 2rem !important;
+}
+
+.MuiSvgIcon-root,
+svg {
+  font-size: 2rem !important;
+}

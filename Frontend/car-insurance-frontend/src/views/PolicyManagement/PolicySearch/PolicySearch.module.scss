@@ -1,0 +1,121 @@
+@use "/src/styles/colors" as *;
+
+.container {
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.nodata {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.title {
+  margin-inline: auto;
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  margin: 0 !important;
+  border: none;
+  outline: none;
+}
+
+.input-container {
+  padding-inline: 4rem;
+  padding-block: 2rem;
+  display: flex;
+  gap: 1rem;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+.search-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  outline: 1px solid gray;
+  width: max-content;
+  border-radius: 1rem;
+}
+
+.search {
+  min-width: 40ch;
+  padding-left: 1rem;
+}
+
+.search-btn {
+  min-width: 6rem;
+}
+
+.load:hover {
+  cursor: progress;
+}
+
+.advanced-search {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-inline: auto;
+  outline: 1px solid gray;
+  padding-block: 1rem;
+  border-radius: 1rem;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  margin: 0 !important;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  color: $primary;
+  max-width: 9ch;
+  padding: 0;
+  display: none;
+}
+
+.advanced-row {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  width: 100%;
+}
+
+.year {
+  max-width: 8ch;
+  text-align: center;
+  margin: 0 !important;
+  border: 1px solid gray;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.selected-item {
+  font-weight: bold;
+  margin-left: 0.3rem;
+  color: $primary-dark;
+  padding-right: 2rem;
+}
+
+.advanced-select-btn {
+  margin-left: auto;
+}
+
+.advanced-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}

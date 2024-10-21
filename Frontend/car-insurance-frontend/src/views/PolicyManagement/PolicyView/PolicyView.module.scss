@@ -1,0 +1,38 @@
+@use "../../../styles/colors" as *;
+@use "../../../styles/breakpoint" as *;
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+}
+
+.sort,
+.policies-per-page { 
+  padding: 4px 8px;
+  border: 2px solid gray;
+  border-radius: 8px;
+  background-color: white; 
+  color: black; 
+  font-size: 14px;
+} 
+ 
+
+.view-btn {
+  display: flex;
+  font-size: 14px;
+  padding: 16px;
+  margin-left: 24px;
+}
+
+.info {
+  font-size: 24px;
+  font-weight: 500;
+  color: $primary;
+  display: flex;
+  width: fit-content;
+  margin-inline: auto;
+  margin-block: 50px;
+}

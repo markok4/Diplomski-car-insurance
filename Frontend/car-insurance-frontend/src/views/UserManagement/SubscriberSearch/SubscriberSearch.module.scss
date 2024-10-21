@@ -1,0 +1,46 @@
+.subscribersList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px; // Adjust the space between cards as needed
+}
+
+.nodata {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search-row {
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+  gap: 1rem;
+  outline: 1px solid gray;
+  width: max-content;
+  border-radius: 1rem;
+  margin-bottom: 5rem;
+}
+
+.search {
+  min-width: 40ch;
+  padding-left: 1rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  margin: 0 !important;
+  border: none;
+  outline: none;
+}
+
+.search-btn {
+  min-width: 6rem;
+}
+
+.load:hover {
+  cursor: progress;
+}

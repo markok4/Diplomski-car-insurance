@@ -1,0 +1,8 @@
+@use "../../styles/colors" as *;
+
+.card {
+  background-color: $text-light;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px rgba($gray-dark, 0.2);
+  padding: 20px;
+}

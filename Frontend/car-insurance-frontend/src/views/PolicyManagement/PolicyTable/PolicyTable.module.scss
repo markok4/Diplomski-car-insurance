@@ -1,0 +1,27 @@
+@use "../../../styles/colors" as *;
+@use "../../../styles/breakpoint" as *;
+
+.action {
+  justify-self: end;
+  align-self: baseline;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $accent;
+
+  .action-btn {
+    color: $accent-light;
+    text-decoration: none;
+    border-bottom: 2px solid $accent-light;
+
+    &:hover {
+      color: $accent;
+      border-color: $accent;
+    }
+  }
+
+  @include mobile {
+    grid-row: 5;
+    align-self: end;
+    justify-self: start;
+  }
+}
